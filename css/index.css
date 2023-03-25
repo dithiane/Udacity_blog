@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: 'Fira Sans', sans-serif;
+    padding: 40px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px;
+ }
+
+ a {
+    color: rgb(29, 2, 2);
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+ }
+
+.header { grid-area: header; }
+.blog { grid-area: blog; }
+.footer { grid-area: footer; }
+
+.grid-container {
+   display: grid;
+   grid-template-areas:
+     'header'
+     'blog'
+     'footer';
+   min-height: 100vh;
+   grid-template-rows: min-content 1fr min-content;
+   grid-template-columns: 100%;
+   gap: 10px;
+ }
+
+ @media (max-width: 500px) {
+   body {
+      font-size: 8px;
+      padding: 0;
+   }
+ }
