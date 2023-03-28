@@ -1,14 +1,27 @@
  nav {
-    display : flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
  }
 
  .menu {
-    display : flex;
+    display: flex;
     flex-direction: row;
+    align-items: center;
  }
- 
+
+ .menu li {
+    padding: 0 10px;
+ }
+
+ .menu a:active {
+    color: #D72121;
+ }
+
+ a span{ 
+   color: Red 
+ }
+
  nav ul {
     list-style: none;
     margin: 0;
@@ -16,16 +29,17 @@
  }
 
  @media (max-width: 700px) {
-   nav {
-      flex-direction: column;
-   }
-   .menu {
-      justify-content: center;
-   }
- }
- @media (max-width: 300px) {
-   .menu {
-      flex-direction: column;
-   }
+    nav {
+       flex-direction: column;
+    }
+
+    .menu {
+       justify-content: center;
+    }
  }
 
+ @media (max-width: 300px) {
+    .menu {
+       flex-direction: column;
+    }
+ }

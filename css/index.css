@@ -20,6 +20,33 @@ a {
    text-align: center;
 }
 
+.logo {
+   display: flex;
+   flex-direction: row;
+   white-space: nowrap;
+   
+}
+
+.logo a{
+   color: #11BCC7;
+   font-weight: 600;
+   font-size: 23px;
+}
+
+.subscribe{
+   display: flex;
+   align-items: center;
+}
+
+.subscribe button{
+   background-color: #D72121;
+   color: white;
+   font-weight: 600;
+   cursor: pointer;
+   border: none;
+   padding: 10px 50px;
+}
+
 .header {
    grid-area: header;
 }
@@ -38,7 +65,7 @@ a {
       'header'
       'blog'
       'footer';
-   min-height: 100vh;
+   min-height: 95vh;
    grid-template-rows: min-content 1fr min-content;
    grid-template-columns: 100%;
    gap: 10px;
