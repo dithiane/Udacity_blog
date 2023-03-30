@@ -1,6 +1,36 @@
+@import "global.css";
+
 .blog {
     background-color: #F2F4FD;
     background-image: url("../assets/about.png");
     background-repeat: no-repeat;
-    background-size: cover
- }
+    background-size: cover;
+}
+
+.about {
+    margin: 86px;
+    width: 30%;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 55px;
+}
+
+p{
+    font-size: 14px;
+}
+.about img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+}
+
+@media (max-width: 500px) {
+    .about{
+        width: auto;
+        margin: 10px;
+        text-align: center;
+    }
+}

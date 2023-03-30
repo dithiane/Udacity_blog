@@ -1,45 +1,79 @@
- nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
- }
+.logo {
+   display: flex;
+   flex-direction: row;
+   white-space: nowrap;
+   align-items: center;
+}
 
- .menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
- }
+.logo a {
+   color: var(--sky);
+   font-weight: 600;
+   font-size: 24px;
+}
 
- .menu li {
-    padding: 0 10px;
- }
+.logo img {
+   border-radius: 50%;
+   width: 30px
+}
 
- .menu a:active {
-    color: #D72121;
- }
+nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
 
- a span{ 
-   color: Red 
- }
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
 
- nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
- }
+.menu {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
 
- @media (max-width: 700px) {
-    nav {
-       flex-direction: column;
-    }
+.subscribe {
+   display: flex;
+   align-items: center;
+}
 
-    .menu {
-       justify-content: center;
-    }
- }
+.menu li {
+   padding: 0 10px;
+}
 
- @media (max-width: 300px) {
-    .menu {
-       flex-direction: column;
-    }
- }
+@media (max-width: 1030px) {
+   nav {
+      flex-direction: column;
+   }
+
+   .menu {
+      justify-content: space-evenly;
+      padding: 0;
+   }
+
+   .menu li {
+      padding: 0;
+   }
+
+}
+
+@media (max-width: 600px) {
+   .menu {
+      flex-wrap: wrap;
+   }
+   .logo {
+      justify-content: center;
+   }
+}
+
+@media (max-width: 300px) {
+   .menu {
+      font-size: 8px;
+   }
+
+   .logo a{
+      font-size: 20px;
+   }
+}

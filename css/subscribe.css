@@ -1,0 +1,42 @@
+form {
+    background-color: #E7F0F4;
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    margin: 70px;
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+form .field {
+        font-family: "Poppins";
+        border: none;
+        height: 60px;
+        width: 300px;
+        border-radius: 14px;
+        align-self: center;
+        margin-bottom: 40px;
+        text-align: center;
+}
+
+form .field:focus{
+    outline: none !important;
+    box-shadow: 0 0 10px var(--sky);
+}
+
+form .title {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    align-items: center;
+}

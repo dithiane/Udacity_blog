@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
@@ -14,11 +13,11 @@
 
 <body>
     <div class="grid-container">
-        <div class="header">
+        <section class="header">
             <nav>
                 <div class="logo">
-                    <img src="./assets/logo.svg" alt="HJ logo">
-                    <a href="/">HEALTHY JUICE</a>
+                    <div><img src="./assets/logo.svg" alt="HJ logo"></div>
+                    <div><a href="/">HEALTHY JUICE</a></div>
                 </div>
                 <ul class="menu">
                     <li><a href="browse.html">BROWSE</a></li>
@@ -29,30 +28,26 @@
                     <li><a href="about.html"><span>ABOUT</span></a></li>
                 </ul>
                 <div class="subscribe">
-                    <button type="button">SUBSCRIBE</button>
+                    <a href="subscribe.html" class="button_red">SUBSCRIBE</a>
                 </div>
             </nav>
-        </div>
-        <div class="blog">
-            <div class="hero">
-                <div class="hero_info">
-                    <div class="hero_info_group">
-                        <div class="hero_info_title">
-                            Simple and Tasty Juice Recipes
-                        </div>
-                        <div class="hero_info_text">
-                            For some, freshly squeezed juices form the basis of a diet, for others they become on a par with sweet cola and soda. You will learn how to rationally and profitably include juices in your diet on the soyme website.
-                        </div>
+        </section>
+        <section class="blog">
+            <div class="about">
+                    <div class="title">
+                        Elena Mena
                     </div>
-                </div>
-                
+                    <img src="assets/me.jpeg" alt="Elena Mena">
+                    <h1>Software Engineer</h3>
+                    <p>Healthy style life enthusiast, a developer using leading technologies 
+                        and programming languages to delivery robust web applications.</p>
             </div>
-        </div>
-        <div class="footer">
+        </section>
+        <section class="footer">
             <footer>
                 <p>@ELENA MENA. ALL RIGHTS RESERVED 2023</p>
             </footer>
-        </div>
+        </section>
     </div>
 
 

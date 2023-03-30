@@ -5,21 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
-    <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/blog.css">
-    <link rel="stylesheet" type="text/css" href="../css/footer.css">
-    <link rel="stylesheet" type="text/css" href="../css/browse.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/browse.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="grid-container">
-        <div class="header">
+        <section class="header">
             <nav>
                 <div class="logo">
-                    <img src="../assets/logo.svg" alt="HJ logo">
-                    <a href="/">HEALTHY JUICE</a>
+                    <div><img src="./assets/logo.svg" alt="HJ logo"></div>
+                    <div><a href="/">HEALTHY JUICE</a></div>
                 </div>
                 <ul class="menu">
                     <li><a href="browse.html">BROWSE</a></li>
@@ -30,31 +28,37 @@
                     <li><a href="about.html">ABOUT</a></li>
                 </ul>
                 <div class="subscribe">
-                    <button type="button">SUBSCRIBE</button>
+                    <a href="subscribe.html" class="button_red">SUBSCRIBE</a>
                 </div>
             </nav>
-        </div>
-        <div class="blog">
-            <div class="card">
-                <img src="../assets/mix1.jpg" alt="Mix">
-                <div class="container">
-                    <h4><span>MIX</span> - 1 mins read</h4>
-                    <p>Simple Juice to boost your immune system</p>
+        </section>
+        <section class="blog">
+            <div class="list">
+                <div class="card">
+                    <a href="/articles/mix1.html">
+                        <img src="../assets/mix1.jpg" alt="Mix">
+                        <div class="container">
+                            <h4><span>MIX</span> - 1 mins read</h4>
+                            <p>Simple Juice to boost your immune system</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/articles/mix2.html">
+                        <img src="../assets/mix2.jpg" alt="Mix">
+                        <div class="container">
+                            <h4><span>MIX</span> - 2 mins read</h4>
+                            <p>Simple Juice to boost your immune system</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="card">
-                <img src="../assets/mix2.jpg" alt="Mix">
-                <div class="container">
-                    <h4><span>MIX</span> - 2 mins read</h4>
-                    <p>Simple Juice to boost your immune system</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
+        </section>
+        <section class="footer">
             <footer>
                 <p>@ELENA MENA. ALL RIGHTS RESERVED 2023</p>
             </footer>
-        </div>
+        </section>
     </div>
 
 

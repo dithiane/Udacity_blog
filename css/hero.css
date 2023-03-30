@@ -1,0 +1,71 @@
+@import "global.css";
+
+.hero {
+    display: flex;
+}
+
+.hero_image {
+    width: 50%;
+}
+
+.hero_info {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_info_group {
+    margin: 100px;
+}
+
+.hero_info_title {
+    font-size: 30px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.hero_info_text {
+    font-size: 20px;
+}
+
+@media (max-width: 1386px) {
+
+    .hero_info_title {
+        font-size: 30px;
+    }
+
+    .hero_info_text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1030px) {
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero_image {
+        width: 100%;
+    }
+
+    .hero_info {
+        width: 100%;
+    }
+
+    .hero_info_group {
+        margin: 10px;
+    }
+
+    .hero_info_title {
+        font-size: 30px;
+    }
+
+    .hero_info_text {
+        font-size: 20px;
+    }
+}
