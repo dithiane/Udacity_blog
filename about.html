@@ -7,18 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/subscribe.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="grid-container">
-        <section class="header">
+        <header>
             <nav>
-                <div class="logo">
-                    <div><img src="./assets/logo.svg" alt="HJ logo"></div>
-                    <div><a href="/">HEALTHY JUICE</a></div>
-                </div>
+                <a href="/" class="logo">
+                    <img src="./assets/logo.svg" alt="HJ logo">
+                    HEALTHY JUICE
+                </a>
                 <ul class="menu">
                     <li><a href="browse.html">BROWSE</a></li>
                     <li><a href="mix.html">MIX</a></li>
@@ -31,23 +32,85 @@
                     <a href="subscribe.html" class="button_red">SUBSCRIBE</a>
                 </div>
             </nav>
-        </section>
+        </header>
         <section class="blog">
             <div class="about">
-                    <div class="title">
+                <section class="my_info">
+                    <div class="chapter">
                         Elena Mena
                     </div>
                     <img src="assets/me.jpeg" alt="Elena Mena">
                     <h1>Software Engineer</h3>
-                    <p>Healthy style life enthusiast, a developer using leading technologies 
-                        and programming languages to delivery robust web applications.</p>
+                        <p>Healthy style life enthusiast, a developer using leading technologies
+                            and programming languages to delivery robust web applications.</p>
+                        <hr />
+                </section>
+
+                <section class="design_system">
+                    <div class="chapter">
+                        Design system
+                    </div>
+                    <div class="buttons">
+                        <h1>Buttons</h1>
+                        <a href="subscribe.html" class="button_red">SUBSCRIBE</a>
+                        <input type="submit" class="button_blue" value="SUBMIT">
+                    </div>
+                    <h1>Colors</h1>
+                    <div class="palette">
+                        <ui>
+                            <li class="colorWinter">
+                                <span>winter</span>
+                                <span>#F2F4FD</span>
+                            </li>
+                            <li class="colorRock">
+                                <span>rock</span>
+                                <span>#E7F0F4</span>
+                            </li>
+                            <li class="colorFog">
+                                <span>fog</span>
+                                <span>#CBC4C4</span>
+                            </li>
+                            <li class="colorSky">
+                                <span>sky</span>
+                                <span>#11BCC7</span>
+                            </li>
+                            <li class="colorStorm">
+                                <span>storm</span>
+                                <span>#0C959D</span>
+                            </li>
+                            <li class="colorRose">
+                                <span>rose</span>
+                                <span>#D72121</span>
+                            </li>
+                            <li class="colorMagenta">
+                                <span>magenta</span>
+                                <span>#C10C0C</span>
+                            </li>
+                        </ui>
+                    </div>
+                    <h1>Inputs</h1>
+                    <input type="text" placeholder="YOUR NAME" class="field">
+                    <input type="email" placeholder="YOUR EMAIL" class="field">
+                    <h1>Typography</h1>
+                    <div class="size10">Design system of the Healthy Juice</div>
+                    <div class="size12">Design system of the Healthy Juice</div>
+                    <div class="size14">Design system of the Healthy Juice</div>
+                    <div class="size16">Design system of the Healthy Juice</div>
+                    <div class="size20">Design system of the Healthy Juice</div>
+                    <div class="size24">Design system of the Healthy Juice</div>
+                    <div class="size30">Design system of the Healthy Juice</div>
+                    <div class="size40">Design system of the Healthy Juice</div>
+                </section>
             </div>
         </section>
-        <section class="footer">
-            <footer>
-                <p>@ELENA MENA. ALL RIGHTS RESERVED 2023</p>
-            </footer>
-        </section>
+        <footer>
+            <p>@ELENA MENA. ALL RIGHTS RESERVED 2023</p>
+            <section class="social">
+                <a href=""><img src="./assets/twitter.svg" alt="my Twitter"></a>
+                <a href=""><img src="./assets/linkedin.svg" alt="my Linkedin"></a>
+                <a href=""><img src="./assets/github.svg" alt="my Github"></a>
+            </section>
+        </footer>
     </div>
 
 

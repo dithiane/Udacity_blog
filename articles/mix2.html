@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/hero.css">
+    <link rel="stylesheet" type="text/css" href="../css/article.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="grid-container">
-        <section class="header">
+        <header>
             <nav>
-                <div class="logo">
-                    <div><img src="../assets/logo.svg" alt="HJ logo"></div>
-                    <div><a href="/">HEALTHY JUICE</a></div>
-                </div>
+                <a href="/" class="logo">
+                    <img src="../assets/logo.svg" alt="HJ logo">
+                    HEALTHY JUICE
+                </a>
                 <ul class="menu">
                     <li><a href="../browse.html">BROWSE</a></li>
                     <li><a href="../mix.html">MIX</a></li>
@@ -28,35 +28,40 @@
                     <li><a href="../about.html">ABOUT</a></li>
                 </ul>
                 <div class="subscribe">
-                    <a href="subscribe.html" class="button_red">SUBSCRIBE</a>
+                    <a href="../subscribe.html" class="button_red">SUBSCRIBE</a>
                 </div>
             </nav>
-        </section>
-        <section class="blog">
-            <div class="hero">
-                <div class="hero_image"><img src="/assets/mix2.jpg" alt="Hero image"></div>
-                <div class="hero_info">
-                    <div class="hero_info_group">
-                        <div class="hero_info_title">
-                            Simple and Tasty Juice Recipes
-                        </div>
-                        <div class="hero_info_text">
-                            For some, freshly squeezed juices form the basis of a diet, for others they become on a par with sweet cola and soda. You will learn how to rationally and profitably include juices in your diet on the soyme website.
-                        </div>
-                    </div>
+        </header>
+        <article>
+            <div class="grid-container">
+                <div class="title">
+                    Powerful antioxidant
                 </div>
+                <div class="blog">
+                    <figure>
+                        <figcaption>
+                            Kale and orange juice
+                        </figcaption>
+                        <img src="/assets/mix2.jpg" alt="Mix juice">
+                    </figure>
+                    <p>Beets are not only a good source of folic acid, magnesium, vitamin C, and fiber, but they also
+                        contain a compound that has powerful antioxidant and anti-inflammatory effects.</p>
+                    <p>Oranges, as we all know, are full of vitamin C and other antioxidants that are good for you.</p>
+                    <p>This natural beetroot and orange juice is incredibly tasty and highly nutritious. It is rich in
+                        vitamin C and a powerful antioxidant that supports healthy blood flow.</p>
+                </div>
+                <div class="date"><span>created:</span> 03/12/2023</div>
             </div>
-        </section>
-        <section class="footer">
-            <footer>
-                <p>@ELENA MENA. ALL RIGHTS RESERVED 2023</p>
-            </footer>
-        </section>
+        </article>
+        <footer>
+            <p>@ELENA MENA. ALL RIGHTS RESERVED 2023</p>
+            <section class="social">
+                <a href=""><img src="../assets/twitter.svg" alt="my Twitter"></a>
+                <a href=""><img src="../assets/linkedin.svg" alt="my Linkedin"></a>
+                <a href=""><img src="../assets/github.svg" alt="my Github"></a>
+            </section>
+        </footer>
     </div>
-
-
-    </div>
-
 </body>
 
 </html>

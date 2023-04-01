@@ -9,28 +9,194 @@
 
 .about {
     margin: 86px;
-    width: 30%;
+    width: 80%;
 }
 
-.title {
+.my_info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.design_system {
+    width: 60%;
+}
+
+.chapter {
     font-weight: 600;
     font-size: 30px;
     line-height: 55px;
+    white-space: nowrap;
 }
 
-p{
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+h1 {
+    white-space: nowrap;
+}
+
+p {
     font-size: 14px;
 }
+
 .about img {
     border-radius: 50%;
-    width: 160px;
-    height: 160px;
+    width: 30%;
 }
 
-@media (max-width: 500px) {
-    .about{
+.palette {
+    list-style: none;
+    width: 100%;
+}
+
+.palette li {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.palette span {
+    font-style: normal;
+}
+
+.colorWinter {
+    background-color: var(--winter);
+}
+
+.colorWinter span {
+    color: black;
+}
+
+.colorRock {
+    background-color: var(--rock);
+}
+
+.colorRock span {
+    color: black;
+}
+
+.colorSky {
+    background-color: var(--sky);
+}
+
+.colorSky span {
+    color: white;
+}
+
+.colorStorm {
+    background-color: var(--storm);
+}
+
+.colorStorm span {
+    color: white;
+}
+
+.colorRose {
+    background-color: var(--rose);
+}
+
+.colorRose span {
+    color: white;
+}
+
+.colorMagenta {
+    background-color: var(--magenta);
+}
+
+.colorMagenta span {
+    color: white;
+}
+
+.colorFog {
+    background-color: var(--fog);
+}
+
+.colorFog span {
+    color: white;
+}
+
+.size10 {
+    font-size: 10px;
+}
+
+.size12 {
+    font-size: 12px;
+}
+
+.size14 {
+    font-size: 14px;
+}
+
+.size16 {
+    font-size: 16px;
+}
+
+.size20 {
+    font-size: 20px;
+}
+
+.size24 {
+    font-size: 24px;
+}
+
+.size30 {
+    font-size: 30px;
+}
+
+.size30 {
+    font-size: 40px;
+}
+
+.design_system .button_red,
+.design_system .button_blue {
+    width: 200px;
+}
+
+@media (max-width: 900px) {
+    .about {
+        margin: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
         width: auto;
         margin: 10px;
+        text-align: left;
+    }
+
+    .chapter {
+        font-size: 20px;
+        white-space: normal;
+        line-height: 25px;
         text-align: center;
+    }
+
+    .buttons {
+        align-items: center
+    }
+
+    h1 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .my_info {
+        width: 100%;
+    }
+
+    .my_info img {
+        align-self: center;
+    }
+
+    .design_system {
+        width: 100%;
     }
 }

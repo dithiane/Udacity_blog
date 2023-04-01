@@ -11,21 +11,19 @@
     display: flex;
     flex-direction: column;
     margin: 30px;
+    max-width: 312px;
 }
 
 .card img {
-    width: 300px;
-    height: auto;
+    height: 230px
 }
 
 @media (max-width: 1030px) {
-    .card img {
-        width: 400px;
-    }
 
     .card {
         margin: 5px;
     }
+
     .list {
         padding: 0;
     }
@@ -34,5 +32,6 @@
 @media (max-width: 500px) {
     .card img {
         max-width: 200px;
+        height: auto;
     }
 }

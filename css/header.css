@@ -1,25 +1,27 @@
 .logo {
    display: flex;
-   flex-direction: row;
    white-space: nowrap;
    align-items: center;
-}
+   width: auto;
 
-.logo a {
    color: var(--sky);
    font-weight: 600;
    font-size: 24px;
 }
 
+
 .logo img {
    border-radius: 50%;
-   width: 30px
+   width: 30px;
+   margin-right: 10px;
 }
 
 nav {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   margin-bottom: 10px;
+   ;
 }
 
 nav ul {
@@ -28,7 +30,12 @@ nav ul {
    padding: 0;
 }
 
+p {
+   margin: 0
+}
+
 .menu {
+   font-size: 16px;
    display: flex;
    flex-direction: row;
    align-items: center;
@@ -44,6 +51,16 @@ nav ul {
 }
 
 @media (max-width: 1030px) {
+   .menu {
+      font-size: 10px;
+   }
+
+   nav p {
+      font-size: 30px;
+   }
+}
+
+@media (max-width: 900px) {
    nav {
       flex-direction: column;
    }
@@ -63,6 +80,7 @@ nav ul {
    .menu {
       flex-wrap: wrap;
    }
+
    .logo {
       justify-content: center;
    }
@@ -73,7 +91,11 @@ nav ul {
       font-size: 8px;
    }
 
-   .logo a{
+   .logo {
+      font-size: 20px;
+   }
+
+   nav p {
       font-size: 20px;
    }
 }

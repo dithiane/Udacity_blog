@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/browse.css">
+    <link rel="stylesheet" type="text/css" href="css/cards.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="grid-container">
-        <section class="header">
+        <header>
             <nav>
-                <div class="logo">
-                    <div><img src="./assets/logo.svg" alt="HJ logo"></div>
-                    <div><a href="/">HEALTHY JUICE</a></div>
-                </div>
+                <a href="/" class="logo">
+                    <img src="./assets/logo.svg" alt="HJ logo">
+                    HEALTHY JUICE
+                </a>
                 <ul class="menu">
                     <li><a href="browse.html">BROWSE</a></li>
                     <li><a href="mix.html">MIX</a></li>
@@ -31,34 +31,38 @@
                     <a href="subscribe.html" class="button_red">SUBSCRIBE</a>
                 </div>
             </nav>
-        </section>
-        <section class="blog">
+        </header>
+        <article>
             <div class="list">
                 <div class="card">
                     <a href="/articles/vegetable1.html">
                         <img src="../assets/vegetable1.jpg" alt="Vegetable">
                         <div class="container">
-                            <h4><span>VEGETABLE</span> - 2 mins read</h4>
-                            <p>Simple Juice to boost your immune system</p>
+                            <h4><span>Tomato, Celery, Potato juices</span> - 2 mins read</h4>
+                            <p>A complex protection of our body</p>
                         </div>
                     </a>
                 </div>
                 <div class="card">
-                    <a href="/articles/vegetable1.html">
+                    <a href="/articles/vegetable2.html">
                         <img src="../assets/vegetable2.jpg" alt="Vegetable">
                         <div class="container">
-                            <h4><span>VEGETABLE</span> - 3 mins read</h4>
-                            <p>Simple Juice to boost your immune system</p>
+                            <h4><span>Carrot juice</span> - 3 mins read</h4>
+                            <p>Perfectly strengthens the heart and blood vessels</p>
                         </div>
                     </a>
                 </div>
             </div>
-        </section>
-        <section class="footer">
-            <footer>
-                <p>@ELENA MENA. ALL RIGHTS RESERVED 2023</p>
-            </footer>
-        </section>
+        </article>
+        <footer>
+            <p>@ELENA MENA. ALL RIGHTS RESERVED 2023</p>
+            <section class="social">
+                <a href=""><img src="./assets/twitter.svg" alt="my Twitter"></a>
+                <a href="https://www.linkedin.com/in/elenamena-denver"><img src="./assets/linkedin.svg"
+                        alt="my Linkedin"></a>
+                <a href="https://github.com/dithiane"><img src="./assets/github.svg" alt="my Github"></a>
+            </section>
+        </footer>
     </div>
 
 

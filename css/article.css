@@ -1,0 +1,75 @@
+@import "global.css";
+
+span {
+    color: var(--sky);
+    font-style: italic;
+}
+
+article .grid-container {
+    display: grid;
+    grid-template-areas:
+        'title'
+        'blog'
+        'date';
+    grid-template-rows: min-content 1fr 10px;
+    grid-template-columns: 100%;
+    padding: 20px;
+}
+
+.title {
+    grid-area: title;
+    font-size: 30px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.blog {
+    grid-area: blog;
+    font-size: 20px;
+}
+
+.blog img {
+    float: left;
+    width: 50%;
+    margin: 0 20px 0 0;
+}
+
+.blog p {
+    margin: 10px;
+    text-align: left;
+    text-align: justify;
+}
+
+figcaption {
+    font-size: 10px;
+    padding: 5px;
+}
+
+.date {
+    grid-area: date;
+    text-align: end;
+    font-style: italic;
+}
+
+
+@media (max-width: 1386px) {
+
+    .title {
+        font-size: 30px;
+    }
+
+    .blog {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1030px) {
+
+    .blog img {
+        margin: 0 10px 0 0;
+    }
+}

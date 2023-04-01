@@ -1,3 +1,14 @@
+@import "global.css";
+
+.blog {
+    background-color: #F2F4FD;
+    background-image: url("../assets/about.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25%;
+    display: flex;
+}
+
 form {
     background-color: #E7F0F4;
     width: 400px;
@@ -11,32 +22,67 @@ form {
     justify-content: center;
 }
 
-form img{
+form img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
 
-form .field {
-        font-family: "Poppins";
-        border: none;
-        height: 60px;
-        width: 300px;
-        border-radius: 14px;
-        align-self: center;
-        margin-bottom: 40px;
-        text-align: center;
+.field {
+    font-family: "Poppins";
+    border: none;
+    height: 60px;
+    width: 300px;
+    border-radius: 14px;
+    align-self: center;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px solid var(--sky);
 }
 
-form .field:focus{
+.field:focus {
     outline: none !important;
     box-shadow: 0 0 10px var(--sky);
 }
 
-form .title {
+.title {
     font-size: 40px;
     display: flex;
     justify-content: center;
     margin: 40px;
     align-items: center;
+}
+
+@media (max-width: 900px) {
+    .blog {
+        justify-content: center;
+        background-position: 38%;
+    }
+
+    form {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    form {
+        height: 250px;
+        justify-content: flex-start;
+    }
+
+    .field {
+        width: 200px;
+        height: 57px;
+        margin-bottom: 25px;
+    }
+
+    .title {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .blog {
+        background-position: 32%;
+    }
 }

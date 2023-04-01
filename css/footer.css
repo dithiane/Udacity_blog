@@ -1,6 +1,25 @@
-footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+.social {
+    display: flex;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 1030px) {
+    p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    p {
+        text-align: center;
+    }
+
+    .social {
+        margin-top: 10px;
+        justify-content: center;
+    }
 }
