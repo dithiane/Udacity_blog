@@ -1,8 +1,8 @@
 :root {
    --winter: #F2F4FD;
    --rock: #E7F0F4;
-   --sky: #11BCC7;
-   --storm: #0C959D;
+   --sky: #067F98;
+   --storm: #0D5687;
    --rose: #D72121;
    --magenta: #C10C0C;
    --fog: #CBC4C4
@@ -48,7 +48,6 @@ body {
 
 a {
    color: black;
-   letter-spacing: 2px;
    text-decoration: none;
    padding: 5px;
    display: inline-block;
@@ -160,6 +159,12 @@ blockquote {
    .button_blue {
       padding: 10px 7px;
       margin: 5px;
+   }
+}
+
+@media (min-width: 900px) {
+   .button_red {
+      width: 223px;
    }
 }
 
